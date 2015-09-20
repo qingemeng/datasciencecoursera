@@ -1,0 +1,5 @@
+content <- url("http://biostat.jhsph.edu/~jleek/contact.html")
+html <- readLines(content)
+close(content)
+c(nchar(html[10]), nchar(html[20]),nchar(html[30]),nchar(html[100]))
+res <-sapply(FUN=nchar, c(html[10], html[20], html[30],html[100]))
