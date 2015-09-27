@@ -14,5 +14,5 @@ png(file.path(plots.dir, 'plot1.png'), width=480, height=480)
 with(emissionByYear, 
      barplot(height=Emissions/10^6, names.arg=year, 
              xlab='Years', ylab='Total Emissions (Million Tons)', 
-             main='Total Emission from PM2.5 ~ Year'))
+             main='Total Emission from PM2.5 ~ Year (US)'))
 dev.off()
