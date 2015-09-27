@@ -25,6 +25,18 @@ You should create one R script called `run_analysis.R` that does the following.
 
 `run_analysis.R`: data clean up script
 
+	1. Work Performed
+	2. read subject files
+	3. read feature files, select data on mean and standard deviation only
+	4. read labels
+	5. merge required train data of subject,activity, and features
+	6. merge required test data of subject,activity, and features
+	7. merge train and test data
+	8. give descriptive activity names and variable names
+	9. create independent tidy data set with the average of each variable for each activity and each subject.
+	10. reorder the dataset based on subject and activity
+	11. write to file
+
 `tidy_data.txt`: cleaned up output dataset
 
 `CodeBook.md`: explanation of the cleaned data, variables, transformation, etc.
