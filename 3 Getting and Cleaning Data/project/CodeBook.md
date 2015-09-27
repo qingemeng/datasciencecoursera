@@ -7,27 +7,6 @@ Subsequently, the body linear acceleration and angular velocity were derived in 
 
 Finally a Fast Fourier Transform (FFT) was applied to some of these signals producing `fBodyAcc-XYZ`, `fBodyAccJerk-XYZ`, `fBodyGyro-XYZ`, `fBodyAccJerkMag`, `fBodyGyroMag`, `fBodyGyroJerkMag`. (Note the 'f' to indicate frequency domain signals). 
 
-These signals were used to estimate variables of the feature vector for each pattern:  
-'-XYZ' is used to denote 3-axial signals in the X, Y and Z directions.
-
-* `tBodyAcc-XYZ`
-* `tGravityAcc-XYZ`
-* `tBodyAccJerk-XYZ`
-* `tBodyGyro-XYZ`
-* `tBodyGyroJerk-XYZ`
-* `tBodyAccMag`
-* `tGravityAccMag`
-* `tBodyAccJerkMag`
-* `tBodyGyroMag`
-* `tBodyGyroJerkMag`
-* `fBodyAcc-XYZ`
-* `fBodyAccJerk-XYZ`
-* `fBodyGyro-XYZ`
-* `fBodyAccMag`
-* `fBodyAccJerkMag`
-* `fBodyGyroMag`
-* `fBodyGyroJerkMag`
-
 The set of variables that were estimated from these signals are: 
 
 `mean()`: Mean value
@@ -39,6 +18,12 @@ There are two more variables in the dataset:
 
 `activity`: six activities (**WALKING, WALKING_UPSTAIRS, WALKING_DOWNSTAIRS, SITTING, STANDING, LAYING**) are performed.
 
+### Units
+1. `subject`: integers are used to indicated subject id (Its range is from 1 to 30)
+2. `activity`: string to indicate 6 activities
+3. feature variables: Features are normalized and bounded within [-1,1]
+
+
 ### Work Performed
 
 1. read subject files
@@ -49,5 +34,6 @@ There are two more variables in the dataset:
 6. merge train and test data
 7. give descriptive activity names and variable names
 8. create independent tidy data set with the average of each variable for each activity and each subject.
+9. reorder the dataset based on `subject` and `activity`
 9. write to file
 

@@ -27,6 +27,6 @@ You should create one R script called `run_analysis.R` that does the following.
 
 `tidy_data.txt`: cleaned up output dataset
 
-`CodeBook.md`
+`CodeBook.md`: explanation of the cleaned data, variables, transformation, etc.
 
-`README.md`
+`README.md`: project requirements and files included
